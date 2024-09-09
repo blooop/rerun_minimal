@@ -5,11 +5,14 @@ description = "using pixi to manage a rerun based project"
 authors = [{name = "Austin Gregg-Smith", email = "blooop@gmail.com"}]
 requires-python = ">=3.10"
 
-dependencies = ["rerun-sdk"]
+# dependencies = ["rerun-sdk"]
 
 ##uncommenting these lines enables pixi to run, but this does not feel correct as its duplicating the rerun-sdk dependency
-# [tool.pixi.dependencies]
-# rerun-sdk = ">=0.18.2"
+[tool.pixi.dependencies]
+python = "==3.10"
+uv ="*"
+pip  ="*"
+rerun-sdk = ">=0.18.2"
 
 [build-system]
 requires = ["hatchling"]
